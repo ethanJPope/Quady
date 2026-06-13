@@ -3,8 +3,8 @@
 #define SERVO_TX 17
 #define SERVO_RX 18
 
-#define CURRENT_ID 1
-#define NEW_ID 2
+#define CURRENT_ID 2
+#define NEW_ID 8
 
 SMS_STS st;
 
