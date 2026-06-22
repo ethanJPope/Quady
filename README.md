@@ -1,8 +1,6 @@
 # Quady
 
-Quady is my 8-servo 3D-printed quadruped robot dog project. The goal is to build a real walking robot from scratch, then eventually connect the physical design to simulation and AI training with NVIDIA Isaac Sim / Isaac Lab.
-
-This project mixes the parts of engineering I enjoy most: CAD, 3D printing, electronics, programming, and robotics. It is still a work in progress, but the main goal is to get a first version walking and learn enough from it to make the next version better.
+Quady is my 8-servo 3D-printed quadruped robot dog project. The goal is to build a real walking robot from scratch, then eventually connect the physical design to simulation and AI training with NVIDIA Isaac Sim / Isaac Lab. This project mixes the parts of engineering I enjoy most: CAD, 3D printing, electronics, programming, and robotics. It is still a work in progress, but the main goal is to get a first version walking and learn enough from it to make the next version better.
 
 ## Project Goals
 
@@ -16,6 +14,8 @@ This project mixes the parts of engineering I enjoy most: CAD, 3D printing, elec
 ## Current Design
 
 Quady is currently an 8-servo robot dog, which means each leg has two powered joints. This keeps the first version simpler than a 12-servo design while still being complex enough to learn real quadruped mechanics and control.
+
+<img width="4080" height="3072" alt="IMG_20260611_183636071_AE" src="https://github.com/user-attachments/assets/1cd2bef3-71bd-4ee5-9695-c7bdd2eb0b95" />
 
 The current plan is:
 
