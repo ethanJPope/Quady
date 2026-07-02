@@ -39,6 +39,8 @@ Known hardware for the current version:
 
 This section will get more specific as the electronics and final mechanical layout become locked in.
 
+Quick build and wiring notes are in [ASSEMBLY.md](ASSEMBLY.md).
+
 ## Software
 
 The software side is being built in stages:
