@@ -15,7 +15,7 @@ Quady is my 8-servo 3D-printed quadruped robot dog project. The goal is to build
 
 Quady is currently an 8-servo robot dog, which means each leg has two powered joints. This keeps the first version simpler than a 12-servo design while still being complex enough to learn real quadruped mechanics and control.
 
-<img width="4080" height="3072" alt="IMG_20260611_183636071_AE" src="https://github.com/user-attachments/assets/1cd2bef3-71bd-4ee5-9695-c7bdd2eb0b95" />
+<img width="1387" height="1040" alt="PXL_20260830_213550859 MP" src="https://github.com/user-attachments/assets/59e34034-bc83-40d2-8fa5-9b268a84dd5c" />
 
 The current plan is:
 
