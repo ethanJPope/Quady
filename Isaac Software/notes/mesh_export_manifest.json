@@ -1,0 +1,213 @@
+{
+  "document_name": "Quady Assembly v11",
+  "unit_note": "Fusion API geometry values are in centimeters. STL files are exported by Fusion from the current design units.",
+  "exports": [
+    {
+      "fusion_body": "Body",
+      "link_name": "base_body",
+      "visual_path": "D:\\Quady\\Isaac Software\\meshes\\visual\\base_body.stl",
+      "collision_path": "D:\\Quady\\Isaac Software\\meshes\\collision\\base_body.stl",
+      "bbox": {
+        "min_cm": [
+          -21.434941319556728,
+          -2.9680929879203877,
+          -1.6046721431123656
+        ],
+        "max_cm": [
+          -1.558256012524943,
+          11.022214488318856,
+          1.9214475202277839
+        ],
+        "center_cm": [
+          -11.496598666040835,
+          4.027060750199234,
+          0.15838768855770913
+        ]
+      }
+    },
+    {
+      "fusion_body": "Upper Leg (1)",
+      "link_name": "front_left_upper_leg",
+      "visual_path": "D:\\Quady\\Isaac Software\\meshes\\visual\\front_left_upper_leg.stl",
+      "collision_path": "D:\\Quady\\Isaac Software\\meshes\\collision\\front_left_upper_leg.stl",
+      "bbox": {
+        "min_cm": [
+          -3.6534885704890807,
+          6.853999999999992,
+          -4.922586658656295
+        ],
+        "max_cm": [
+          3.9633797646197713,
+          11.341000000000038,
+          0.939999999996056
+        ],
+        "center_cm": [
+          0.15494559706534528,
+          9.097500000000014,
+          -1.9912933293301194
+        ]
+      }
+    },
+    {
+      "fusion_body": "Lower Leg (1)",
+      "link_name": "front_left_lower_leg",
+      "visual_path": "D:\\Quady\\Isaac Software\\meshes\\visual\\front_left_lower_leg.stl",
+      "collision_path": "D:\\Quady\\Isaac Software\\meshes\\collision\\front_left_lower_leg.stl",
+      "bbox": {
+        "min_cm": [
+          -3.523901179402161,
+          6.854000000000032,
+          -12.847318641374974
+        ],
+        "max_cm": [
+          3.7781536726840024,
+          11.34100000000004,
+          -4.4481536725990125
+        ],
+        "center_cm": [
+          0.12712624664092065,
+          9.097500000000036,
+          -8.647736156986994
+        ]
+      }
+    },
+    {
+      "fusion_body": "Upper Leg",
+      "link_name": "front_right_upper_leg",
+      "visual_path": "D:\\Quady\\Isaac Software\\meshes\\visual\\front_right_upper_leg.stl",
+      "collision_path": "D:\\Quady\\Isaac Software\\meshes\\collision\\front_right_upper_leg.stl",
+      "bbox": {
+        "min_cm": [
+          -3.6534885704890807,
+          -3.146000000000008,
+          -4.922586658656295
+        ],
+        "max_cm": [
+          3.9633797646197713,
+          1.3410000000000384,
+          0.939999999996056
+        ],
+        "center_cm": [
+          0.15494559706534528,
+          -0.9024999999999848,
+          -1.9912933293301194
+        ]
+      }
+    },
+    {
+      "fusion_body": "Lower Leg",
+      "link_name": "front_right_lower_leg",
+      "visual_path": "D:\\Quady\\Isaac Software\\meshes\\visual\\front_right_lower_leg.stl",
+      "collision_path": "D:\\Quady\\Isaac Software\\meshes\\collision\\front_right_lower_leg.stl",
+      "bbox": {
+        "min_cm": [
+          -3.523901179402161,
+          -3.145999999999968,
+          -12.847318641374974
+        ],
+        "max_cm": [
+          3.7781536726840024,
+          1.3410000000000393,
+          -4.4481536725990125
+        ],
+        "center_cm": [
+          0.12712624664092065,
+          -0.9024999999999643,
+          -8.647736156986994
+        ]
+      }
+    },
+    {
+      "fusion_body": "Upper Leg (1) (1) (1)",
+      "link_name": "rear_left_upper_leg",
+      "visual_path": "D:\\Quady\\Isaac Software\\meshes\\visual\\rear_left_upper_leg.stl",
+      "collision_path": "D:\\Quady\\Isaac Software\\meshes\\collision\\rear_left_upper_leg.stl",
+      "bbox": {
+        "min_cm": [
+          -18.65348857048908,
+          6.853999999999992,
+          -4.922586658656295
+        ],
+        "max_cm": [
+          -11.036620235380228,
+          11.341000000000038,
+          0.939999999996056
+        ],
+        "center_cm": [
+          -14.845054402934654,
+          9.097500000000014,
+          -1.9912933293301194
+        ]
+      }
+    },
+    {
+      "fusion_body": "Lower Leg (1) (1) (1)",
+      "link_name": "rear_left_lower_leg",
+      "visual_path": "D:\\Quady\\Isaac Software\\meshes\\visual\\rear_left_lower_leg.stl",
+      "collision_path": "D:\\Quady\\Isaac Software\\meshes\\collision\\rear_left_lower_leg.stl",
+      "bbox": {
+        "min_cm": [
+          -18.523901179402163,
+          6.854000000000032,
+          -12.847318641374974
+        ],
+        "max_cm": [
+          -11.221846327315998,
+          11.34100000000004,
+          -4.4481536725990125
+        ],
+        "center_cm": [
+          -14.87287375335908,
+          9.097500000000036,
+          -8.647736156986994
+        ]
+      }
+    },
+    {
+      "fusion_body": "Upper Leg (1) (1)",
+      "link_name": "rear_right_upper_leg",
+      "visual_path": "D:\\Quady\\Isaac Software\\meshes\\visual\\rear_right_upper_leg.stl",
+      "collision_path": "D:\\Quady\\Isaac Software\\meshes\\collision\\rear_right_upper_leg.stl",
+      "bbox": {
+        "min_cm": [
+          -18.65348857048908,
+          -3.146000000000008,
+          -4.922586658656295
+        ],
+        "max_cm": [
+          -11.036620235380228,
+          1.3410000000000384,
+          0.939999999996056
+        ],
+        "center_cm": [
+          -14.845054402934654,
+          -0.9024999999999848,
+          -1.9912933293301194
+        ]
+      }
+    },
+    {
+      "fusion_body": "Lower Leg (1) (1)",
+      "link_name": "rear_right_lower_leg",
+      "visual_path": "D:\\Quady\\Isaac Software\\meshes\\visual\\rear_right_lower_leg.stl",
+      "collision_path": "D:\\Quady\\Isaac Software\\meshes\\collision\\rear_right_lower_leg.stl",
+      "bbox": {
+        "min_cm": [
+          -18.523901179402163,
+          -3.145999999999968,
+          -12.847318641374974
+        ],
+        "max_cm": [
+          -11.221846327315998,
+          1.3410000000000393,
+          -4.4481536725990125
+        ],
+        "center_cm": [
+          -14.87287375335908,
+          -0.9024999999999643,
+          -8.647736156986994
+        ]
+      }
+    }
+  ]
+}

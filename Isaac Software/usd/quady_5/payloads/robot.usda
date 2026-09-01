@@ -1,0 +1,133 @@
+#usda 1.0
+(
+    customLayerData = {
+        string creator = "URDF USD Converter v0.1.2"
+    }
+    defaultPrim = "quady"
+    doc = """Generated from Composed Stage of root layer C:\\Users\\ethan\\AppData\\Local\\Temp\\tmps9tt_hsh\\quady.usdc
+
+
+Generated from Composed Stage of root layer C:\\Users\\ethan\\AppData\\Local\\Temp\\urdf_import_quady_tb8vbc6j\\usdex_quady\\quady.usdc
+
+
+Generated from Composed Stage of root layer C:\\Users\\ethan\\AppData\\Local\\Temp\\urdf_import_quady_tb8vbc6j\\temp_quady\\quady.usd
+
+
+Generated from Composed Stage of root layer D:\\Quady\\Isaac Software\\usd\\quady_5\\payloads\\base.usd
+"""
+    kilogramsPerUnit = 1
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+over "quady" (
+    prepend apiSchemas = ["IsaacRobotAPI"]
+)
+{
+    custom rel isaac:physics:robotJoints
+    custom rel isaac:physics:robotLinks
+
+    over "Physics"
+    {
+        over "front_left_hip_pitch" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "front_right_hip_pitch" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "rear_left_hip_pitch" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "rear_right_hip_pitch" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "front_left_knee_pitch" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "front_right_knee_pitch" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "rear_left_knee_pitch" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "rear_right_knee_pitch" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+    }
+
+    over "Geometry"
+    {
+        over "base_body" (
+            prepend apiSchemas = ["IsaacLinkAPI"]
+        )
+        {
+            over "front_left_upper_leg" (
+                prepend apiSchemas = ["IsaacLinkAPI"]
+            )
+            {
+                over "front_left_lower_leg" (
+                    prepend apiSchemas = ["IsaacLinkAPI"]
+                )
+                {
+                }
+            }
+
+            over "front_right_upper_leg" (
+                prepend apiSchemas = ["IsaacLinkAPI"]
+            )
+            {
+                over "front_right_lower_leg" (
+                    prepend apiSchemas = ["IsaacLinkAPI"]
+                )
+                {
+                }
+            }
+
+            over "rear_left_upper_leg" (
+                prepend apiSchemas = ["IsaacLinkAPI"]
+            )
+            {
+                over "rear_left_lower_leg" (
+                    prepend apiSchemas = ["IsaacLinkAPI"]
+                )
+                {
+                }
+            }
+
+            over "rear_right_upper_leg" (
+                prepend apiSchemas = ["IsaacLinkAPI"]
+            )
+            {
+                over "rear_right_lower_leg" (
+                    prepend apiSchemas = ["IsaacLinkAPI"]
+                )
+                {
+                }
+            }
+        }
+    }
+}
+

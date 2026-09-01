@@ -1,0 +1,142 @@
+{
+  "design": "Quady Hybrid V2 Full Design",
+  "generator_build_id": "HYBRID_V2_DIRECT_CHILD_COMPONENTS_2026-08-08",
+  "units": "mm",
+  "confirmed": {
+    "hip_spacing": [
+      150.0,
+      100.0
+    ],
+    "battery_each": [
+      139.0,
+      47.0,
+      40.0
+    ],
+    "servos": "8 x STS-3215 12 V",
+    "servo_bus": "2 x Waveshare four-servo adapter, one per battery",
+    "controller": "ESP32-S3 DevKitC WROOM-1 N16R8-compatible"
+  },
+  "non_printed_materials": {
+    "boards": "1.6 mm FR-4 fiberglass laminate per layer, two layers",
+    "spacers": "6061 aluminum, 50 mm",
+    "fasteners": "stainless steel M4/M3",
+    "batteries": "commercial LiPo, exact envelope 139 x 47 x 40",
+    "servos": "commercial STS-3215 12 V; envelope provisional",
+    "adapter_pcb": "FR-4 PCB; outline and hole pattern provisional",
+    "controller_pcb": "FR-4 PCB",
+    "camera": "commercial OVO Arducam webcam; bracket provisional",
+    "optional_pi": "FR-4 Raspberry Pi 3B PCB reservation"
+  },
+  "printed_material": "PETG-CF or PA12 nylon, 4+ walls, 35-45% gyroid infill",
+  "provisional_interfaces": [
+    "cassette hole pattern 42 x 32 mm",
+    "STS-3215 outer envelope and mounting ears",
+    "Waveshare adapter outline and mounting holes",
+    "OVO Arducam camera outline and bracket holes",
+    "preserved foot connection until the existing part is measured in the new cassette"
+  ],
+  "alignment_feedback_loop": {
+    "visual_views_required": [
+      "isometric",
+      "top",
+      "front",
+      "side"
+    ],
+    "pass_rule": "each hip-to-knee centerline terminates at its hip and knee shaft axes; each visible preserved-foot envelope begins at its knee axis",
+    "audit_component": "65_REFERENCE_ALIGNMENT_AUDIT"
+  },
+  "checks": [
+    {
+      "label": "FL cassette fits board edge margin",
+      "pass": true,
+      "detail": "cassette center=(75.0, 50.0) mm"
+    },
+    {
+      "label": "FR cassette fits board edge margin",
+      "pass": true,
+      "detail": "cassette center=(75.0, -50.0) mm"
+    },
+    {
+      "label": "RL cassette fits board edge margin",
+      "pass": true,
+      "detail": "cassette center=(-75.0, 50.0) mm"
+    },
+    {
+      "label": "RR cassette fits board edge margin",
+      "pass": true,
+      "detail": "cassette center=(-75.0, -50.0) mm"
+    },
+    {
+      "label": "confirmed hip spacing is 150 x 100 mm",
+      "pass": true,
+      "detail": "four current CAD hip datums"
+    },
+    {
+      "label": "upper link follows current knee table",
+      "pass": true,
+      "detail": "hip-to-knee vector is 53.882 mm in X and Z"
+    },
+    {
+      "label": "both batteries fit the lower board",
+      "pass": true,
+      "detail": "two 139 x 47 x 40 mm packs"
+    },
+    {
+      "label": "battery headroom is positive",
+      "pass": true,
+      "detail": "50 mm gap - 40 mm pack - 5 mm cable clearance"
+    },
+    {
+      "label": "ESP32 footprint fits top board",
+      "pass": true,
+      "detail": "USB and antenna face the board edge"
+    },
+    {
+      "label": "optional Pi footprint fits underside",
+      "pass": true,
+      "detail": "optional reservation only"
+    },
+    {
+      "label": "camera footprint fits top board",
+      "pass": true,
+      "detail": "front-edge camera reservation"
+    },
+    {
+      "label": "printable cassette thickness is sane",
+      "pass": true,
+      "detail": "4 mm plate before local ribs/fillets"
+    },
+    {
+      "label": "printable upper link thickness is sane",
+      "pass": true,
+      "detail": "12 mm link envelope"
+    },
+    {
+      "label": "ground datum is below preserved foot reference",
+      "pass": true,
+      "detail": "planning datum below current foot envelope"
+    },
+    {
+      "label": "servo proxy has positive clearance",
+      "pass": true,
+      "detail": "provisional envelope clearance"
+    },
+    {
+      "label": "two separate four-servo buses are reserved",
+      "pass": true,
+      "detail": "one adapter per confirmed battery"
+    },
+    {
+      "label": "alignment audit datums are defined",
+      "pass": true,
+      "detail": "hip axes, knee axes, centerlines, and visible preserved-foot envelopes"
+    }
+  ],
+  "step_import_status": [
+    "ST3215.step imported at source origin; manual shaft alignment still required"
+  ],
+  "source_files": {
+    "servo_step": "D:\\Quady\\ST3215.step",
+    "preserved_foot_stl": "D:\\Quady\\Cad\\V2\\Lower Leg.stl"
+  }
+}

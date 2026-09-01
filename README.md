@@ -2,7 +2,35 @@
 
 Quady is my 8-servo 3D-printed quadruped robot dog project. The goal is to build a real walking robot from scratch, then eventually connect the physical design to simulation and AI training with NVIDIA Isaac Sim / Isaac Lab. This project mixes the parts of engineering I enjoy most: CAD, 3D printing, electronics, programming, and robotics. It is still a work in progress, but the main goal is to get a first version walking and learn enough from it to make the next version better.
 
+<<<<<<< Updated upstream
 ## Project Goals
+=======
+- `Servo_ID_Pairing/Servo_ID_Pairing.ino` - two-bus Serial Monitor tool that
+  detects a hand-moved servo, asks for its intended ID, refuses occupied IDs,
+  and writes only after an explicit `yes` confirmation.
+- `ServoID_Recovery/ServoID_Recovery.ino` - menu-driven SCServo ID recovery tool for two servo controllers.
+- Final right bus: RX 14, TX 13 (expected IDs 1-4)
+- Final left bus: RX 12, TX 11 (expected IDs 5-8)
+
+### Pairing commands
+
+- `scan` scans IDs 0-20 on both sides and begins movement detection.
+- `scan full` scans IDs 0-253 when an address is outside the quick range.
+- `list` shows the detected side/ID addresses.
+- `watch` resets the movement baselines.
+- `cancel` aborts a selected servo or pending EEPROM write.
+- `isolated` runs the required full-bus proof after all other servos on the
+  selected side have been physically disconnected. The sketch will not write
+  an ID without this one-address isolation check and a following `yes`.
+- With the Waveshare Bus Servo Adapter (A), use UART jumper position A and
+  connect the UART labels RX-to-RX and TX-to-TX as documented by Waveshare.
+
+Tested compile environment for this draft:
+
+- Board FQBN: `esp32:esp32:esp32s3`
+- Espressif ESP32 platform: `3.3.10`
+- Installed SCServo library: `1.0.2` (`workloads/scservo` package metadata)
+>>>>>>> Stashed changes
 
 - Build a compact 8-servo quadruped robot dog.
 - Design and print the body and legs myself.
@@ -11,6 +39,7 @@ Quady is my 8-servo 3D-printed quadruped robot dog project. The goal is to build
 - Use simulation and AI training later once the physical design is far enough along.
 - Document the process honestly, including the mistakes and redesigns.
 
+<<<<<<< Updated upstream
 ## Current Design
 
 Quady is currently an 8-servo robot dog, which means each leg has two powered joints. This keeps the first version simpler than a 12-servo design while still being complex enough to learn real quadruped mechanics and control.
@@ -76,3 +105,14 @@ This is also a project I want to be able to show as real engineering work, not j
 Quady is under active development. The design has changed from a 12-servo robot dog to an 8-servo robot dog to make the first version more realistic and easier to finish.
 
 More build notes, photos, CAD exports, wiring details, and control code will be added as the project develops.
+=======
+- `scan 1` or `scan 2`
+- `scan all`
+- `scanraw 1` or `scanraw 2`
+- `set <bus> <currentId> <newId>`
+- `wizard <bus>`
+- `ping` uses a lighter retry test; `scan` is stricter.
+- Scans now require repeated consistent replies before reporting a servo.
+- `scanraw` is a looser mode for diagnosing flaky wiring or bus timing.
+- The tool will refuse to write a new ID if that ID is already responding on the same bus.
+>>>>>>> Stashed changes

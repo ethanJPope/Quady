@@ -1,0 +1,10 @@
+Name,Unit,Expression,Value,Comments,Favorite
+qBoardX,mm,260 mm,260,Board front-to-back envelope,TRUE
+qBoardY,mm,190 mm,190,Board left-to-right envelope,TRUE
+qBoardT,mm,1.6 mm,1.6,Temporary FR-4 layer thickness,TRUE
+qHipSpacingX,mm,150 mm,150,Front/rear hip-center spacing,TRUE
+qHipSpacingY,mm,100 mm,100,Left/right hip-center spacing,TRUE
+qHipHalfX,mm,qHipSpacingX / 2,75,Calculated half-spacing,FALSE
+qHipHalfY,mm,qHipSpacingY / 2,50,Calculated half-spacing,FALSE
+qBoardMarginX,mm,(qBoardX - qHipSpacingX) / 2,55,Front/rear board margin,FALSE
+qBoardMarginY,mm,(qBoardY - qHipSpacingY) / 2,45,Left/right board margin,FALSE

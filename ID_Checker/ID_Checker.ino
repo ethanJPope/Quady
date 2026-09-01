@@ -2,8 +2,8 @@
 #include <SCServo.h>
 #include <math.h>
 
-#define BUS1_TX 9
-#define BUS1_RX 10
+#define BUS1_TX 13
+#define BUS1_RX 14
 
 #define BUS2_TX 11
 #define BUS2_RX 12
@@ -558,6 +558,7 @@ static void printPositions() {
     Serial.print('\t');
     printPositionBar(percent, outside);
     Serial.println();
+    delay(1000);
   }
   maybeSaveAutoRange();
   Serial.println();

@@ -1,0 +1,253 @@
+#usda 1.0
+(
+    customLayerData = {
+        string creator = "URDF USD Converter v0.1.2"
+    }
+    defaultPrim = "quady"
+    doc = """Generated from Composed Stage of root layer C:\\Users\\ethan\\AppData\\Local\\Temp\\tmps9tt_hsh\\quady.usdc
+
+
+Generated from Composed Stage of root layer C:\\Users\\ethan\\AppData\\Local\\Temp\\urdf_import_quady_tb8vbc6j\\usdex_quady\\quady.usdc
+
+
+Generated from Composed Stage of root layer C:\\Users\\ethan\\AppData\\Local\\Temp\\urdf_import_quady_tb8vbc6j\\temp_quady\\quady.usd
+
+
+Generated from Composed Stage of root layer D:\\Quady\\Isaac Software\\usd\\quady_5\\payloads\\base.usd
+"""
+    kilogramsPerUnit = 1
+    metersPerUnit = 1
+    subLayers = [
+        @./physics.usda@
+    ]
+    upAxis = "Z"
+)
+
+over "quady"
+{
+    over "Physics"
+    {
+        def MjcActuator "front_left_hip_pitch_actuator"
+        {
+            uniform double mjc:forceRange:max = 3
+            uniform double mjc:forceRange:min = -3
+            custom rel mjc:target
+            prepend rel mjc:target = </quady/Physics/front_left_hip_pitch>
+        }
+
+        def MjcActuator "front_left_knee_pitch_actuator"
+        {
+            uniform double mjc:forceRange:max = 3
+            uniform double mjc:forceRange:min = -3
+            custom rel mjc:target
+            prepend rel mjc:target = </quady/Physics/front_left_knee_pitch>
+        }
+
+        def MjcActuator "front_right_hip_pitch_actuator"
+        {
+            uniform double mjc:forceRange:max = 3
+            uniform double mjc:forceRange:min = -3
+            custom rel mjc:target
+            prepend rel mjc:target = </quady/Physics/front_right_hip_pitch>
+        }
+
+        def MjcActuator "front_right_knee_pitch_actuator"
+        {
+            uniform double mjc:forceRange:max = 3
+            uniform double mjc:forceRange:min = -3
+            custom rel mjc:target
+            prepend rel mjc:target = </quady/Physics/front_right_knee_pitch>
+        }
+
+        def MjcActuator "rear_left_hip_pitch_actuator"
+        {
+            uniform double mjc:forceRange:max = 3
+            uniform double mjc:forceRange:min = -3
+            custom rel mjc:target
+            prepend rel mjc:target = </quady/Physics/rear_left_hip_pitch>
+        }
+
+        def MjcActuator "rear_left_knee_pitch_actuator"
+        {
+            uniform double mjc:forceRange:max = 3
+            uniform double mjc:forceRange:min = -3
+            custom rel mjc:target
+            prepend rel mjc:target = </quady/Physics/rear_left_knee_pitch>
+        }
+
+        def MjcActuator "rear_right_hip_pitch_actuator"
+        {
+            uniform double mjc:forceRange:max = 3
+            uniform double mjc:forceRange:min = -3
+            custom rel mjc:target
+            prepend rel mjc:target = </quady/Physics/rear_right_hip_pitch>
+        }
+
+        def MjcActuator "rear_right_knee_pitch_actuator"
+        {
+            uniform double mjc:forceRange:max = 3
+            uniform double mjc:forceRange:min = -3
+            custom rel mjc:target
+            prepend rel mjc:target = </quady/Physics/rear_right_knee_pitch>
+        }
+
+        over "front_left_hip_pitch" (
+            delete apiSchemas = ["PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
+        )
+        {
+        }
+
+        over "front_right_hip_pitch" (
+            delete apiSchemas = ["PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
+        )
+        {
+        }
+
+        over "rear_left_hip_pitch" (
+            delete apiSchemas = ["PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
+        )
+        {
+        }
+
+        over "rear_right_hip_pitch" (
+            delete apiSchemas = ["PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
+        )
+        {
+        }
+
+        over "front_left_knee_pitch" (
+            delete apiSchemas = ["PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
+        )
+        {
+        }
+
+        over "front_right_knee_pitch" (
+            delete apiSchemas = ["PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
+        )
+        {
+        }
+
+        over "rear_left_knee_pitch" (
+            delete apiSchemas = ["PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
+        )
+        {
+        }
+
+        over "rear_right_knee_pitch" (
+            delete apiSchemas = ["PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
+        )
+        {
+        }
+    }
+
+    over "Geometry"
+    {
+        over "base_body"
+        {
+            over "front_left_upper_leg"
+            {
+                over "front_left_lower_leg"
+                {
+                    over "front_left_lower_leg"
+                    {
+                    }
+
+                    over "box"
+                    {
+                    }
+                }
+
+                over "front_left_upper_leg"
+                {
+                }
+
+                over "box"
+                {
+                }
+            }
+
+            over "front_right_upper_leg"
+            {
+                over "front_right_lower_leg"
+                {
+                    over "front_right_lower_leg"
+                    {
+                    }
+
+                    over "box"
+                    {
+                    }
+                }
+
+                over "front_right_upper_leg"
+                {
+                }
+
+                over "box"
+                {
+                }
+            }
+
+            over "rear_left_upper_leg"
+            {
+                over "rear_left_lower_leg"
+                {
+                    over "rear_left_lower_leg"
+                    {
+                    }
+
+                    over "box"
+                    {
+                    }
+                }
+
+                over "rear_left_upper_leg"
+                {
+                }
+
+                over "box"
+                {
+                }
+            }
+
+            over "rear_right_upper_leg"
+            {
+                over "rear_right_lower_leg"
+                {
+                    over "rear_right_lower_leg"
+                    {
+                    }
+
+                    over "box"
+                    {
+                    }
+                }
+
+                over "rear_right_upper_leg"
+                {
+                }
+
+                over "box"
+                {
+                }
+            }
+
+            over "base_body"
+            {
+            }
+
+            over "box"
+            {
+            }
+        }
+    }
+
+    over "Materials"
+    {
+    }
+
+    over "VisualMaterials"
+    {
+    }
+}
+
